@@ -76,3 +76,10 @@
 .fav:focus {
   outline: none;
 }
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30%;
+}

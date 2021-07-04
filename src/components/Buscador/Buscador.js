@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from 'react-router-dom';
-import {addMovieFavourite, getMovies, getMovieDetail} from '../../actions'
+import { addMovieFavourite, getMovies, getMovieDetail } from '../../actions'
 import styles from './Buscador.module.css';
 
 
