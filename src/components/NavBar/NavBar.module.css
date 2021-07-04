@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.container {
+	background-color: #301b3f;
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.5rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	font-size: large;	
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	border-bottom: 2px solid #3c415c;
+	border-top: 2px solid #3c415c;
+}
+
+.logoHenry {
+	width: 2rem;
+	height: 2rem;
+}
+
+.links {
+	display: flex;
+}
+
+.link {
+	margin-right: 3rem;
+	color: #b4a5a5;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: #b4a5a5;
+	text-decoration: none;
+	transform: scale(1.2);
+}

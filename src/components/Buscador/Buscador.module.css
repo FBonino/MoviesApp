@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.container {
+    margin-top: 11vh;
+    min-height: 88vh;
+    padding: 0 10rem;
+}
+
+.searchBar {
+    border: 2px solid #3c415c;
+    background-color: #301b3f;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem auto;
+    width: 30rem;
+}
+
+.input {
+    border: none;
+    color: #b4a5a5;
+    background-color: #301b3f;
+    margin: 0 0.75rem;
+    width: 25rem;
+    border-radius: 9999px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    padding-left: 0.5rem;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.button {
+    border-radius: 0 9999px 9999px 0;
+    background-color: #301b3f;
+    border: none;
+    padding: 0.4rem 0.7rem;
+}
+
+.button:hover {
+    background-color: #3c415c;
+    transform: scale(1.02);
+}
+
+.button:focus {
+    outline: none;
+}
+
+.body {
+    display: flex;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 7rem;
+}
+
+.image {
+    border-radius: 1rem;
+    width: 13rem;
+    height: 18rem;
+}
+
+.movie {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    max-width: 15rem;
+    background-color: transparent;
+    transition: transform 100ms;
+}
+
+.movie:hover {
+    transform: scale(1.025) perspective(1000px);
+    box-shadow: 0 0 1.5rem #301b3f;
+}
+
+.movie:hover > .image {
+    filter: blur(1px);
+	opacity: 50%;
+}
+
+.movie:hover > .fav {
+    visibility: visible;
+}
+
+.movie:hover > .info {
+    visibility: visible;
+}
+
+.fav {
+    visibility: hidden;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    margin: auto;
+    transform: scale(1.5);
+    transition: transform 100ms;
+}
+
+.fav:hover {
+    transform: scale(2.1) perspective(1000px);
+    cursor: pointer;
+}
+
+.fav:focus {
+    outline: none;
+}
+
+.info {
+	visibility: hidden;
+	position: absolute;
+	top: 20%;
+	left: 7%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+	font-weight: bolder;
+	text-decoration: none;
+	color: #b4a5a5;
+}
