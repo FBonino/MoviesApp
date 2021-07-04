@@ -9,17 +9,20 @@ export class Movie extends React.Component {
 		this.loading = false;
 	}
 
-	componentDidMount() {
-		this.props.getMovieDetail(this.props.match.params.id);
-	}
+	// componentDidMount() {
+	// 	this.props.getMovieDetail(this.props.match.params.id);
+	// }
 
-	componentDidUpdate() {
-		this.loading = true;
-		this.props.getMovieDetail(this.props.match.params.id)
-			.then(this.loading = false);
-	}
+	// componentDidUpdate() {
+	// this.loading = true;
+	// this.props.getMovieDetail(this.props.match.params.id)
+	// 	.then(this.loading = false);
+	// }
 
 	render() {
+		this.loading = true;
+		this.props.getMovieDetail(this.props.match.params.id)
+		.then(this.loading = false);
 		let details = this.props.movieDetail;
 		return (
 			<div>
