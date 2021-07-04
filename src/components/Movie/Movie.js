@@ -10,6 +10,10 @@ export class Movie extends React.Component {
 	}
 
 	componentDidMount() {
+		this.props.getMovieDetail(this.props.match.params.id);
+	}
+
+	componentDidUpdate() {
 		this.loading = true;
 		this.props.getMovieDetail(this.props.match.params.id)
 			.then(this.loading = false);
