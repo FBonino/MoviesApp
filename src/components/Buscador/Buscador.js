@@ -49,6 +49,8 @@ export class Buscador extends Component {
                     <button className = {styles.fav} onClick = {() => this.props.addMovieFavourite({title: movie.Title, movieID: movie.imdbID, poster: movie.Poster})}> 💗 </button>
                   </div>
                 )
+              } else {
+                return null;
               }
             })
           }
